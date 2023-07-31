@@ -30,7 +30,7 @@
 	DI 테스트를 위한 객체 생성
 	property : Setter를 호출하면서 의존 주입
 	 -->
-	<!-- <bean class="com.mycompany.springwebapp.service.Ch12ServiceDIByXml">
+	<!-- <bean class="com.mycompany.springhomework.service.Ch12ServiceDIByXml">
 		<property name="ch12DaoByXml1" ref="daoByXml1"></property>
 		<property name="ch12DaoByXml2" ref="daoByXml2"></property>
 		<property name="ch12DaoByXml3" ref="daoByXml3"></property>

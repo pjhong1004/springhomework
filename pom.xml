@@ -28,6 +28,8 @@
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
 	    <version>4.0.1</version>
+	    <!-- 최종 산출물에는 포함되지 않음 -->
+	    <scope>provided</scope>
 	</dependency>
 	
 	<!-- JSP 2.3 의존 설정 -->
@@ -35,6 +37,8 @@
 	    <groupId>javax.servlet.jsp</groupId>
 	    <artifactId>javax.servlet.jsp-api</artifactId>
 	    <version>2.3.3</version>
+	    <!-- 최종 산출물에는 포함되지 않음 -->
+	    <scope>provided</scope>
 	</dependency>
 	
 	<!-- JSTL 1.2 의존 설정 -->
@@ -84,7 +88,8 @@
 	    <artifactId>spring-jdbc</artifactId>
 	    <version>5.3.29</version>
 	</dependency>
-	
+
+
 	<!-- 
 	Ch02.
 	자바 코드로 JSON을 생성하거나, JSON 파싱해서 이용할 때 사용하는 라이브러리
@@ -106,6 +111,16 @@
 	</dependency>
 	
 	<!-- 
+	Ch04.
+	@Valid 어노테이션을 사용하기 위해서 의존설정
+	 -->
+	 <dependency>
+	    <groupId>javax.validation</groupId>
+	    <artifactId>validation-api</artifactId>
+	    <version>2.0.1.Final</version>
+	</dependency>
+	
+	<!-- 
 	Ch09
 	멀티파트를 해석하기 위해 필요(방법1)
 	 -->
@@ -124,7 +139,7 @@
 	    <artifactId>commons-dbcp2</artifactId>
 	    <version>2.9.0</version>
 	</dependency>
-	
+	 
 	<!-- 
 	Ch13
 	JDBC Driver
@@ -160,6 +175,19 @@
 	    <artifactId>mybatis-spring</artifactId>
 	    <version>2.1.1</version>
 	</dependency>
+
+	<!-- 
+	Ch13
+	PasswordEncoder를 사용하기 위해 필요한 라이브러리	
+	 -->
+	 <dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-core</artifactId>
+	    <version>5.5.8</version>
+	</dependency>
+	 	
+	 
+	
 	
   </dependencies>
 </project>
